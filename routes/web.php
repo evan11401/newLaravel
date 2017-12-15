@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+//留言板首頁
 Route::get('/msg','MsgController@index');
-
+//新增留言
 Route::post('/addMsg','MsgController@create');
